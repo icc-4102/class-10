@@ -52,7 +52,7 @@ class CovidCasesFragment : Fragment(), OnClickListener {
     override fun onClickItem(item: Any) {
         if (item is CovidCaseModel) {
             viewModel.selectCase(item)
-            viewModel.navigator.navigateToDetail()
+            viewModel.navigator.navigateToDetail(item.country)
         }
     }
 

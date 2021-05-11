@@ -8,6 +8,7 @@ import androidx.room.PrimaryKey
 data class CovidCaseEntity(
     @PrimaryKey
     @ColumnInfo(name = "country") var country: String,
+    @ColumnInfo(name = "flag") var flag: String,
     @ColumnInfo(name = "cases") var cases: String,
     @ColumnInfo(name = "death") var death: String,
     @ColumnInfo(name = "todayCases") var todayCases: String,

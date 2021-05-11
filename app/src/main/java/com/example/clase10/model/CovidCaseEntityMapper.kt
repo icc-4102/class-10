@@ -6,6 +6,7 @@ class CovidCaseEntityMapper : EntityMapper<CovidCaseEntity, CovidCaseModel> {
         return CovidCaseModel(
             null,
             type.country,
+            CountryInfo(type.flag),
             type.cases.toLong(),
             type.todayCases.toLong(),
             type.death.toLong(),
@@ -18,6 +19,7 @@ class CovidCaseEntityMapper : EntityMapper<CovidCaseEntity, CovidCaseModel> {
     override fun mapToCached(type: CovidCaseModel): CovidCaseEntity {
         return CovidCaseEntity(
             type.country,
+            type.countryInfo.flag,
             type.cases.toString(),
             type.deaths.toString(),
             type.todayCases.toString(),

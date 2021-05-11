@@ -49,9 +49,9 @@ class CovidCasesViewModel(application: Application) : AndroidViewModel(applicati
                        //En la clases se vio AstncTask pero esta deprecado desde API 30 esta es una nueva forma de hacerlo.
                        executor.execute {
                             body.forEach {
-                                 database.insertCase(CovidCaseEntityMapper().mapToCached(it))
+                                database.insertCase(CovidCaseEntityMapper().mapToCached(it))
                             }
-
+                           loadCases()
                        }
                   }
              }
