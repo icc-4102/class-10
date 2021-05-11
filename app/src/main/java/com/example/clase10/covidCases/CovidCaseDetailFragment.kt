@@ -1,4 +1,4 @@
-package com.example.clase09.covidCases
+package com.example.clase10.covidCases
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,14 +7,12 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.fragment.app.setFragmentResult
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.navArgs
-import com.example.clase09.R
-import com.example.clase09.extensions.loadImage
+import com.example.clase10.R
+import com.example.clase10.extensions.loadImage
 
 class CovidCaseDetailFragment : Fragment() {
 

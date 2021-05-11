@@ -1,4 +1,4 @@
-package com.example.clase09.covidCases
+package com.example.clase10.covidCases
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,13 +6,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.example.clase09.CovidCase
-import com.example.clase09.IAdapterView
-import com.example.clase09.OnClickListener
-import com.example.clase09.R
-import com.example.clase09.extensions.loadImage
-import com.example.clase09.model.CovidCaseModel
+import com.example.clase10.CovidCase
+import com.example.clase10.IAdapterView
+import com.example.clase10.OnClickListener
+import com.example.clase10.R
+import com.example.clase10.extensions.loadImage
+import com.example.clase10.model.CovidCaseModel
 
 class CovidRecyclerViewAdapter(override val onClickListener: OnClickListener):
         RecyclerView.Adapter<CovidRecyclerViewAdapter.CovidViewHolder>(), IAdapterView {

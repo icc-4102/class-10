@@ -1,21 +1,16 @@
-package com.example.clase09.covidCases
+package com.example.clase10.covidCases
 
 import android.app.Application
 import android.os.Handler
 import android.os.Looper
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import com.example.clase09.MainActivity
-import com.example.clase09.model.CovidCaseEntityMapper
-import com.example.clase09.model.CovidCaseModel
-import com.example.clase09.model.CovidCasesDao
-import com.example.clase09.model.DatabaseRepository
-import com.example.clase09.navigation.Navigator
-import com.example.clase09.networking.CovidCaseRepository
-import com.example.clase09.networking.getRetrofit
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import com.example.clase10.MainActivity
+import com.example.clase10.model.CovidCaseEntityMapper
+import com.example.clase10.model.CovidCaseModel
+import com.example.clase10.model.CovidCasesDao
+import com.example.clase10.model.DatabaseRepository
+import com.example.clase10.navigation.Navigator
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 

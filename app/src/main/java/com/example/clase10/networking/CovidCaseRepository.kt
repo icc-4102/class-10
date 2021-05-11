@@ -1,6 +1,6 @@
-package com.example.clase09.networking
+package com.example.clase10.networking
 
-import com.example.clase09.model.CovidCaseModel
+import com.example.clase10.model.CovidCaseModel
 import retrofit2.Call
 import retrofit2.http.GET
 
